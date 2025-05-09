@@ -40,5 +40,5 @@ int main() {
 
     printf("The maximum number is: %d\n", max);
 
-    return 0;
+  
 }
