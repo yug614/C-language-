@@ -1,42 +1,44 @@
-#include<stdio.h>
- int main()
- {
- 	int a,b,c,d;
- 	
-    printf("Enter first number: ");
-    scanf("%d", &a);
-    printf("Enter second number: ");
-    scanf("%d", &b);
-    printf("Enter third number: ");
-    scanf("%d", &c);
-    printf("Enter fourth number: ");
-    scanf("%d", &d);
+#include <stdio.h>
 
-     if (a > b)
-	  {
-        if (a > c)
-	    {
-            if (a > d)
-                {
-				 printf("a is max");
-                }
-				else
-                {
-				  printf("d is max");
-			    }
-			}
+int main() {
+    int a, b, c, d, max;
+
+   
+    printf("Enter four numbers: ");
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+
+   
+    if (a > b) {
+        if (a > c) {
+            if (a > d) {
+                max = a;
+            } else {
+                max = d;
+            }
+        } else {
+            if (c > d) {
+                max = c;
+            } else {
+                max = d;
+            }
         }
-	else
-	{
-	 if(b>c)
-	 {
-	 	if(b>d)
-	 	{ 
-	 	printf("b is max");
-		 }
-		 else(b<d)
-		 {
-		 	printf("d is max")
-		 }
-	 }
-	}
+    } else {
+        if (b > c) {
+            if (b > d) {
+                max = b;
+            } else {
+                max = d;
+            }
+        } else {
+            if (c > d) {
+                max = c;
+            } else {
+                max = d;
+            }
+        }
+    }
+
+    printf("The maximum number is: %d\n", max);
+
+    return 0;
+}
