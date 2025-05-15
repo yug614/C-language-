@@ -1,0 +1,18 @@
+#include<stdio.h>
+ int main()
+ {
+ 	char ch='a';
+ 	int count = 1;
+ 	do{
+ 		if(count%4 == 1)
+
+{
+	printf("%c\n", ch);
+	 }
+	 ch++;
+	 count++;
+	 	 }
+	 	 while (ch<= 'z');
+ 
+ 	
+ }
