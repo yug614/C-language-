@@ -22,7 +22,7 @@ int main()
 /*
 Enter any string :nayan
 palindrome
-Enter any string :prince
+Enter any string :yug
 not Plindrome
 */
 
