@@ -13,9 +13,16 @@ int main()
 	
 	strcpy(data2, strrev(arr));
 	
-	if(data1!=data2){
+	if(!strcmp(data1, data2)){
 		printf("palindrome");
 	}else{
 		printf("not Plindrome");
 	}
 }
+/*
+Enter any string :nayan
+palindrome
+Enter any string :prince
+not Plindrome
+*/
+
